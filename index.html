@@ -1,8 +1,70 @@
-<html>
-    <head>
-    <title欢迎来到我的网站-这是标题<-
-    title>
-    </head>
-    <body>
-    <h1>hello world!</h1>
- </html>
+<!DOCTYPE html>
+<html lang="zh-ZH">
+<head>
+   <meta chatset="UTF-8">
+   <title> 我的网站-my website</title>
+   <style>
+   		body{
+   			magin: 0;
+   			padding: 0;
+   		}
+   		.beijing{
+        background: #eeeeee url(image/bg.png) no-repeat center;/**背景颜色url是图片地址**/
+        /**background-size: cover;/**背景大小自适应**/
+        height: 700px;
+        overflow: hidden;
+   		}
+   		.daohang{
+   			/*float: right;/**向左浮动**/
+        width: 400px;
+        margin: 0 auto;/**层居中**/
+
+   		}
+   		.logo{
+   			float: left;
+   		}
+   		.toubu{
+   			margin: 0 auto;/**层居中**/
+   			width: 100px;/**宽度**/
+   			overflow: hidden;/**超出隐藏**/
+   			margin-top: 60px;/**距离上面外边缘**/
+   		}
+   		.daohang li{
+   			float: right;
+   			list-style: none;/**往左浮动70个像素**/
+        margin-left:55px;/**往左浮动70个像素**/
+        color: #fff;/**文字颜色**/
+        float:left;
+        }
+        .daohang li a{
+        color: #fff;
+        text-decoration: none;
+        float:left;
+        }
+      .daohang li a:hover{/**鼠标放上文字颜色修改**/
+        text-decoration: underline;
+        color: #000;
+        float:left;
+        }
+      .ab{
+        width:400;
+        margin: 0 auto;/**层居中**/
+        margin-right:10px;/**往左浮动70个像素**/
+        margin-top: 10px;/**距离上面外边缘**/
+      }
+
+   	</style>
+  </head>
+  </body>
+  	<div class="beijing"><!--div 是层，这个是背景-->
+  		  <div class="toubu"><img src="image/logo.png" alt="" class="logo"></div>
+        <a href="http://www.baidu.com" class="ab"></a>
+        <ul class="daohang">
+      		<li><a href="https://www.behance.net/" target="_blank">首页</a></li>
+      		<li>作品</li>
+      		<li>博客</li>
+      		<li>关于</li>
+        </ul>
+  	</div>
+</body>
+</html>
